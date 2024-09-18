@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.maxWidth {
+  max-width: 1250px !important;
+  /* padding: 0 20px !important; */
+}
+
 .btn {
   background-color: #e5745d;
   color: #fff;
@@ -20,9 +25,28 @@
   outline: #fff;
 }
 
+.borders {
+  border: 4px solid red;
+}
+
 .primary {
   color: #e5745d;
 }
 .secondary {
   color: #00413d;
+}
+
+.heading-baner-text {
+  color: #fff;
+  font-family: Vollkorn;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.banner-paragraph-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
 }

@@ -6,7 +6,7 @@ const Navbar = () => {
   const navItems = ["Home", "Page", "Services", "Blog", "Contact"];
 
   return (
-    <nav className="container mx-auto px-4 py-4">
+    <nav className="maxWidth mx-auto py-4">
       <div className="flex justify-between items-center">
         <div className="flex items-center justify-center">
           <svg
@@ -31,7 +31,7 @@ const Navbar = () => {
           </svg>
           <span className="text-[#00413d] font-medium">Safuan</span>
         </div>
-        <div className="flex">
+        <div className=" hidden md:flex">
           <ul className="flex space-x-6">
             {navItems.map((item, index) => (
               <li
