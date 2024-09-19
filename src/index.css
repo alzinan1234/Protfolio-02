@@ -50,3 +50,38 @@
   font-weight: 400;
   line-height: 30px; /* 150% */
 }
+/* In a CSS file (e.g., `styles.css`) */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.banner-background {
+  background: linear-gradient(45deg, #00413d, #007a7a);
+  background-size: 200% 200%;
+  animation: backgroundAnimation 10s ease infinite;
+}
+.p-title {
+  color: #e5745d;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.h1-title {
+  text-align: center;
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  width: 517px;
+  margin: 0 auto;
+}
