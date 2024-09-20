@@ -1,10 +1,10 @@
 import { BiArrowFromLeft } from "react-icons/bi";
-import project1 from "../../assets/image (1) copy.png";
-import project2 from "../../assets/image 1 copy.png";
-import project3 from "../../assets/image copy.png";
+import project1 from "../../assets/photo-1488190211105-8b0e65b80b4e.avif";
+import project2 from "../../assets/photo-34fad45aed93.avif";
+import project3 from "../../assets/photo-15.avif";
 import SectionTitle from "./SectionTitle";
 
-const MyProject = () => {
+const Blog = () => {
   return (
     <div className="max-w-7xl mx-auto mt-8 mb-10 px-4 sm:px-6 lg:px-8">
       <SectionTitle align={"text-center"} />
@@ -29,7 +29,7 @@ const MyProject = () => {
               Industry.
             </p>
             <div className="flex items-center gap-5">
-              <a className="text-blue-500 hover:underline">View Case Studies</a>
+              <a className="text-blue-500 hover:underline">Read More</a>
               <span className="flex justify-center items-center text-orange-700">
                 <BiArrowFromLeft />
               </span>
@@ -56,7 +56,7 @@ const MyProject = () => {
               Industry.
             </p>
             <div className="flex items-center gap-5">
-              <a className="text-blue-500 hover:underline">View Case Studies</a>
+              <a className="text-blue-500 hover:underline">Read More</a>
               <span className="flex justify-center items-center text-orange-700">
                 <BiArrowFromLeft />
               </span>
@@ -83,7 +83,7 @@ const MyProject = () => {
               Industry.
             </p>
             <div className="flex items-center gap-5">
-              <a className="text-blue-500 hover:underline">View Case Studies</a>
+              <a className="text-blue-500 hover:underline">Read More</a>
               <span className="flex justify-center items-center text-orange-700">
                 <BiArrowFromLeft />
               </span>
@@ -91,13 +91,9 @@ const MyProject = () => {
           </div>
         </div>
       </div>
-      <div>
-        <button className="btn flex justify-center items-center mt-10 mx-auto">
-          Click Me
-        </button>
-      </div>
+      <div></div>
     </div>
   );
 };
 
-export default MyProject;
+export default Blog;
