@@ -2,6 +2,7 @@ import Navbar from "../../home/Navbar";
 import Banner from "../../home/Banner";
 import Services from "../../home/Services";
 import Solutions from "../../home/Solutions";
+import Skill from "../../home/Skill";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner />
       <Services />
       <Solutions />
+      <Skill />
     </>
   );
 };
