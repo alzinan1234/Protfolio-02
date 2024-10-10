@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import logo5 from "../../assets/s.svg"; // Importing a hamburger menu icon
+import logo5 from "../../assets/logo-z.png"; // Importing a hamburger menu icon
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState("Home"); // Default active item
@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="flex items-center justify-center">
           <img src={logo5} alt="Logo" className="w-10 h-10" />
-          <span className="text-[#00413d] font-medium">Safuan</span>
+          <span className="text-[#00413d] font-medium">Zinan</span>
         </div>
 
         {/* Desktop Menu */}

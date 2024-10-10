@@ -1,4 +1,5 @@
 import React from "react";
+import moduleName from "../../assets/Untitled design (1).png";
 
 const Footer = () => {
   return (
