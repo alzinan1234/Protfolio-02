@@ -2,7 +2,10 @@ import image from "../../assets/zinan.png";
 
 const Banner = () => {
   return (
-    <div className="bg-[#00413D] md:h-[80vh] relative overflow-hidden flex justify-center items-center px-4 mb-10">
+    <div
+      id="Banner"
+      className="bg-[#00413D] md:h-[80vh] relative overflow-hidden flex justify-center items-center px-4 py-10"
+    >
       <div className="flex flex-col md:flex-row gap-8 h-auto w-full max-w-[1200px] mx-auto items-center">
         {/* Left Text Section */}
         <div className="w-full md:w-[60%] text-center md:text-left relative z-50">
@@ -14,7 +17,7 @@ const Banner = () => {
           </h1>
           <p className="text-[1rem] md:text-[1.25rem] mt-4 text-white">
             I’m a freelance{" "}
-            <span className="font-extrabold">Front-End Web Developer</span>{" "}
+            <span className="font-extrabold">Front-End Web Developer</span>
             based in Indonesia who loves to craft attractive design experiences
             for the web.
           </p>

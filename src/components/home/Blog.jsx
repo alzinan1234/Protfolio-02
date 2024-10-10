@@ -6,10 +6,11 @@ import SectionTitle from "./SectionTitle";
 
 const Blog = () => {
   return (
-    <div className="max-w-7xl mx-auto mt-8 mb-10 px-4 sm:px-6 lg:px-8">
-      <SectionTitle align={"text-center"} />
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center mt-10">
+    <div
+      id="Blog"
+      className="max-w-7xl mx-auto mt-8 mb-10 px-4 sm:px-6 lg:px-8"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center py-10">
         {/* Project Card 1 */}
         <div className="shadow-2xl p-5">
           <div className="w-full h-[270px]">

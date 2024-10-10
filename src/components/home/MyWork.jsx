@@ -1,12 +1,12 @@
 import image2 from "../../assets/Screenshot_2.png";
-import image3 from "../../assets/image (2).png";
+import image3 from "../../assets/Screenshot_6.png";
 import image4 from "../../assets/Screenshot_1.png";
 import image5 from "../../assets/Screenshot_10.png";
 
 const MyWork = () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto mb-20 px-4">
+      <div id="MyWork" className="max-w-screen-xl mx-auto mb-20 px-4">
         <div className="flex flex-wrap gap-7 justify-center">
           {/* First Image */}
           <div className="w-full sm:w-[570px] h-[520px] mt-10">
@@ -17,7 +17,7 @@ const MyWork = () => {
             />
             <a
               href="https://movie-master-02.netlify.app/movie/1064028"
-              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center"
+              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center underline"
             >
               MOVIE WEBSITE
             </a>
@@ -31,7 +31,7 @@ const MyWork = () => {
             />
             <a
               href="https://restaurant-boos.netlify.app/"
-              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center"
+              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center underline"
             >
               RESTAURANT WEBSITE
             </a>
@@ -45,7 +45,7 @@ const MyWork = () => {
             />
             <a
               href="https://your-nike-world.netlify.app/"
-              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center"
+              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center underline"
             >
               NIKE WEBSITE
             </a>
@@ -58,10 +58,10 @@ const MyWork = () => {
               alt="Motion Graphics 2"
             />
             <a
-              href="https://movie-master-02.netlify.app/movie/1064028"
-              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center"
+              href="https://education-02.vercel.app/"
+              className="text-xl sm:text-2xl bg-[#00413D] h-[50px] text-center text-white flex items-center justify-center underline"
             >
-              WEBSITE
+              EDUCATION WEBSITE
             </a>
           </div>
         </div>

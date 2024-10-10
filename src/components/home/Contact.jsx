@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="max-w-screen-lg mx-auto p-5 maxWidth mb-20">
+    <div id="Contact" className="max-w-screen-lg mx-auto p-5 maxWidth mb-20">
       <div className="grid grid-cols-1 md:grid-cols-12 border">
         <div className="bg-gray-900 md:col-span-4 p-10 text-white">
           <p className="mt-4 text-sm leading-7 font-regular uppercase">
@@ -13,7 +13,7 @@ function Contact() {
           </h3>
           <p className="mt-4 leading-7 text-gray-200">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s.
           </p>
 

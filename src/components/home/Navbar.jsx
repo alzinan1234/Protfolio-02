@@ -1,12 +1,26 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import logo5 from "../../assets/logo-z.png"; // Importing a hamburger menu icon
+import { Link } from "react-scroll"; // Import Link from react-scroll
+import logo5 from "../../assets/logo-z.png"; // Importing a logo
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState("Home"); // Default active item
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to handle mobile menu toggle
 
-  const navItems = ["Home", "Page", "Services", "Blog", "Contact"];
+  const navItems = [
+    { name: "Home", to: "Banner" },
+
+    { name: "Services", to: "Service" },
+    { name: "Skills", to: "Skill" },
+    { name: "Project", to: "MyWork" },
+
+    {
+      name: "About",
+      to: "About",
+    },
+    { name: "Blog", to: "Blog" },
+    { name: "Contact", to: "Contact" },
+  ];
 
   return (
     <nav className="maxWidth mx-auto py-4">
@@ -21,14 +35,23 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <ul className="flex space-x-6">
             {navItems.map((item, index) => (
-              <li
-                key={index}
-                onClick={() => setActiveItem(item)}
-                className={`cursor-pointer ${
-                  activeItem === item ? "text-orange-500" : "text-gray-700"
-                }`}
-              >
-                {item}
+              <li key={index}>
+                <Link
+                  to={item.to}
+                  smooth={true}
+                  duration={500} // Smooth scroll animation
+                  onClick={() => {
+                    setActiveItem(item.name);
+                    setIsMenuOpen(false); // Close menu after selection
+                  }}
+                  className={`cursor-pointer ${
+                    activeItem === item.name
+                      ? "text-orange-500"
+                      : "text-gray-700"
+                  }`}
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
           </ul>
@@ -53,17 +76,23 @@ const Navbar = () => {
         <div className="md:hidden mt-4">
           <ul className="flex flex-col items-center space-y-4">
             {navItems.map((item, index) => (
-              <li
-                key={index}
-                onClick={() => {
-                  setActiveItem(item);
-                  setIsMenuOpen(false); // Close menu on selection
-                }}
-                className={`cursor-pointer ${
-                  activeItem === item ? "text-orange-500" : "text-gray-700"
-                }`}
-              >
-                {item}
+              <li key={index}>
+                <Link
+                  to={item.to}
+                  smooth={true}
+                  duration={500} // Smooth scroll animation for mobile as well
+                  onClick={() => {
+                    setActiveItem(item.name);
+                    setIsMenuOpen(false); // Close menu after selection
+                  }}
+                  className={`cursor-pointer ${
+                    activeItem === item.name
+                      ? "text-orange-500"
+                      : "text-gray-700"
+                  }`}
+                >
+                  {item.name}
+                </Link>
               </li>
             ))}
             <button className="btn mt-4">Download CV</button>
