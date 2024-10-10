@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll"; // Import Link from react-scroll
-import logo5 from "../../assets/logo-z.png"; // Importing a logo
-
+import logo5 from "../../assets/logo-z.png";
+import pdf from "../pdf/Zinan-Resume (4).pdf";
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState("Home"); // Default active item
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to handle mobile menu toggle
@@ -67,7 +67,13 @@ const Navbar = () => {
 
         {/* Download CV Button */}
         <div className="hidden md:block">
-          <button className="btn">Download CV</button>
+          <a
+            href={pdf}
+            download="Resume.pdf"
+            className="btn btn-outline-warning my-3 p-4 border border-x-slate-400"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
 
@@ -95,7 +101,13 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <button className="btn mt-4">Download CV</button>
+            <a
+              href={pdf}
+              download="Resume.pdf"
+              className="btn btn-outline-warning my-3 p-4 border border-x-slate-400"
+            >
+              Download Resume
+            </a>
           </ul>
         </div>
       )}
