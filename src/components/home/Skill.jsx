@@ -12,9 +12,9 @@ const Skill = () => {
     { img: skill2, percentage: 96, label: "CSS" },
     { img: skill3, percentage: 90, label: "BOOTSTRAP" },
     { img: skill4, percentage: 95, label: "TAILWIND CSS" },
-    { img: skill1, percentage: 98, label: "JavaScript" },
+    { img: skill1, percentage: 88, label: "JavaScript" },
     { img: skill2, percentage: 92, label: "React" },
-    { img: skill3, percentage: 80, label: "RESTful API" },
+    { img: skill3, percentage: 75, label: "RESTful API" },
     { img: skill3, percentage: 85, label: "NextJs" },
   ];
 
